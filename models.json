@@ -241,9 +241,16 @@
   },
   "glm-5.3-flash": {
     "provider": "zhipuai",
-    "input": 0.075,
-    "output": 0.25,
-    "cache_read": 0.015,
+    "input": 0.15,
+    "output": 0.5,
+    "cache_read": 0.03,
+    "cache_write": 0
+  },
+  "glm-5.3-flashx": {
+    "provider": "zhipuai",
+    "input": 0.37,
+    "output": 1.25,
+    "cache_read": 0.075,
     "cache_write": 0
   },
   "glm-5v-turbo": {
@@ -561,18 +568,6 @@
     "input": 0,
     "output": 0
   },
-  "mimo-v2-omni": {
-    "provider": "xiaomi",
-    "input": 0.14,
-    "output": 0.28,
-    "cache_read": 0.0028
-  },
-  "mimo-v2-pro": {
-    "provider": "xiaomi",
-    "input": 0.435,
-    "output": 0.87,
-    "cache_read": 0.0036
-  },
   "mimo-v2.5": {
     "provider": "xiaomi",
     "input": 0.14,
@@ -590,20 +585,6 @@
     "input": 1.305,
     "output": 2.61,
     "cache_read": 0.0108
-  },
-  "minimax-m2.7": {
-    "provider": "minimax-cn",
-    "input": 0.3,
-    "output": 1.2,
-    "cache_read": 0.06,
-    "cache_write": 0.375
-  },
-  "minimax-m2.7-highspeed": {
-    "provider": "minimax-cn",
-    "input": 0.6,
-    "output": 2.4,
-    "cache_read": 0.06,
-    "cache_write": 0.375
   },
   "minimax-m3": {
     "provider": "minimax-cn",
