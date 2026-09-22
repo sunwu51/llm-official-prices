@@ -506,6 +506,28 @@
       "cache_read": 1
     }
   },
+  "grok-4.7": {
+    "provider": "xai",
+    "input": 2,
+    "output": 6,
+    "cache_read": 0.5,
+    "tiers": [
+      {
+        "input": 4,
+        "output": 12,
+        "cache_read": 1,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 4,
+      "output": 12,
+      "cache_read": 1
+    }
+  },
   "grok-build-0.1": {
     "provider": "xai",
     "input": 1,
@@ -585,6 +607,24 @@
     "input": 1.305,
     "output": 2.61,
     "cache_read": 0.0108
+  },
+  "mimo-v2.6-flash": {
+    "provider": "xiaomi",
+    "input": 0.14,
+    "output": 0.28,
+    "cache_read": 0.0028
+  },
+  "mimo-v2.6-pro": {
+    "provider": "xiaomi",
+    "input": 0.435,
+    "output": 0.87,
+    "cache_read": 0.0036
+  },
+  "mimo-v2.6-pro-ultraspeed": {
+    "provider": "xiaomi",
+    "input": 4.35,
+    "output": 8.7,
+    "cache_read": 0.036
   },
   "minimax-m3": {
     "provider": "minimax-cn",
