@@ -637,16 +637,6 @@
     "output": 2.95,
     "cache_read": 0.015
   },
-  "lyria-3-clip-preview": {
-    "provider": "google",
-    "input": 0,
-    "output": 0
-  },
-  "lyria-3-pro-preview": {
-    "provider": "google",
-    "input": 0,
-    "output": 0
-  },
   "mimo-v2.5": {
     "provider": "xiaomi",
     "input": 0.14,
