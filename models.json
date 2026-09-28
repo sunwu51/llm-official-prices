@@ -219,11 +219,20 @@
     "output": 17.5
   },
   "glm-5.1": {
-    "provider": "zhipuai",
-    "input": 1.4,
-    "output": 4.4,
-    "cache_read": 0.26,
-    "cache_write": 0
+    "provider": "alibaba-cn",
+    "input": 0.825,
+    "output": 3.301,
+    "cache_read": 0.17,
+    "tiers": [
+      {
+        "input": 1.1,
+        "output": 3.851,
+        "tier": {
+          "type": "context",
+          "size": 32000
+        }
+      }
+    ]
   },
   "glm-5.2": {
     "provider": "zhipuai",
@@ -475,6 +484,38 @@
       "cache_read": 0.4,
       "cache_write": 5
     }
+  },
+  "gpt-daybreak-blue-latest": {
+    "provider": "openai",
+    "input": 4,
+    "output": 20,
+    "cache_read": 0.4,
+    "cache_write": 5,
+    "tiers": [
+      {
+        "input": 8,
+        "output": 30,
+        "cache_read": 0.8,
+        "cache_write": 10,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 8,
+      "output": 30,
+      "cache_read": 0.8,
+      "cache_write": 10
+    }
+  },
+  "gpt-daybreak-red-latest": {
+    "provider": "openai",
+    "input": 12.5,
+    "output": 75,
+    "cache_read": 1.25,
+    "cache_write": 15.625
   },
   "gpt-image-2": {
     "provider": "openai",
@@ -793,6 +834,12 @@
     "output": 5.33231,
     "cache_read": 0.22218,
     "cache_write": 2.22179
+  },
+  "qwen3.8-omni-flash": {
+    "provider": "alibaba-cn",
+    "input": 0.113,
+    "output": 0.382,
+    "cache_read": 0.014
   },
   "step-3.5-flash-2603": {
     "provider": "stepfun",
