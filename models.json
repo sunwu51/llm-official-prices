@@ -48,6 +48,13 @@
     "cache_read": 0.2,
     "cache_write": 2.5
   },
+  "claude-sonnet-5-5": {
+    "provider": "anthropic",
+    "input": 2,
+    "output": 10,
+    "cache_read": 0.2,
+    "cache_write": 2.5
+  },
   "deep-research-max-preview-04-2026": {
     "provider": "google",
     "input": 2,
