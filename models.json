@@ -13,6 +13,41 @@
     "cache_read": 0.25,
     "cache_write": 12.5
   },
+  "claude-haiku-4-5": {
+    "provider": "anthropic",
+    "input": 1,
+    "output": 5,
+    "cache_read": 0.1,
+    "cache_write": 1.25
+  },
+  "claude-haiku-4-5-20251001": {
+    "provider": "anthropic",
+    "input": 1,
+    "output": 5,
+    "cache_read": 0.1,
+    "cache_write": 1.25
+  },
+  "claude-opus-4-5": {
+    "provider": "anthropic",
+    "input": 5,
+    "output": 25,
+    "cache_read": 0.5,
+    "cache_write": 6.25
+  },
+  "claude-opus-4-5-20251101": {
+    "provider": "anthropic",
+    "input": 5,
+    "output": 25,
+    "cache_read": 0.5,
+    "cache_write": 6.25
+  },
+  "claude-opus-4-6": {
+    "provider": "anthropic",
+    "input": 5,
+    "output": 25,
+    "cache_read": 0.5,
+    "cache_write": 6.25
+  },
   "claude-opus-4-7": {
     "provider": "anthropic",
     "input": 5,
@@ -40,6 +75,27 @@
     "output": 20,
     "cache_read": 0.2,
     "cache_write": 5
+  },
+  "claude-sonnet-4-5": {
+    "provider": "anthropic",
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.3,
+    "cache_write": 3.75
+  },
+  "claude-sonnet-4-5-20250929": {
+    "provider": "anthropic",
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.3,
+    "cache_write": 3.75
+  },
+  "claude-sonnet-4-6": {
+    "provider": "anthropic",
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.3,
+    "cache_write": 3.75
   },
   "claude-sonnet-5": {
     "provider": "anthropic",
@@ -106,6 +162,61 @@
     "reasoning": 0.6,
     "cache_read": 0.003
   },
+  "deepseek-r1": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 2.294
+  },
+  "deepseek-r1-0528": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 2.294
+  },
+  "deepseek-r1-distill-llama-70b": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.861
+  },
+  "deepseek-r1-distill-llama-8b": {
+    "provider": "alibaba-cn",
+    "input": 0,
+    "output": 0
+  },
+  "deepseek-r1-distill-qwen-1-5b": {
+    "provider": "alibaba-cn",
+    "input": 0,
+    "output": 0
+  },
+  "deepseek-r1-distill-qwen-14b": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.431
+  },
+  "deepseek-r1-distill-qwen-32b": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.861
+  },
+  "deepseek-r1-distill-qwen-7b": {
+    "provider": "alibaba-cn",
+    "input": 0.072,
+    "output": 0.144
+  },
+  "deepseek-v3": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 1.147
+  },
+  "deepseek-v3-1": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 1.721
+  },
+  "deepseek-v3-2-exp": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.431
+  },
   "deepseek-v4-flash": {
     "provider": "deepseek",
     "input": 0.15,
@@ -133,12 +244,100 @@
     "output": 1.19015,
     "cache_read": 0.01488
   },
+  "gemini-2.5-computer-use-preview-10-2025": {
+    "provider": "google",
+    "input": 1.25,
+    "output": 10,
+    "tiers": [
+      {
+        "input": 2.5,
+        "output": 15,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 2.5,
+      "output": 15
+    }
+  },
+  "gemini-2.5-flash": {
+    "provider": "google",
+    "input": 0.3,
+    "output": 2.5,
+    "cache_read": 0.03,
+    "input_audio": 1
+  },
+  "gemini-2.5-flash-image": {
+    "provider": "google",
+    "input": 0.3,
+    "output": 30,
+    "cache_read": 0.075
+  },
+  "gemini-2.5-flash-lite": {
+    "provider": "google",
+    "input": 0.1,
+    "output": 0.4,
+    "cache_read": 0.01,
+    "input_audio": 0.3
+  },
+  "gemini-2.5-flash-preview-tts": {
+    "provider": "google",
+    "input": 0.5,
+    "output": 10
+  },
+  "gemini-2.5-pro": {
+    "provider": "google",
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.125,
+    "tiers": [
+      {
+        "input": 2.5,
+        "output": 15,
+        "cache_read": 0.25,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 2.5,
+      "output": 15,
+      "cache_read": 0.25
+    }
+  },
+  "gemini-2.5-pro-preview-tts": {
+    "provider": "google",
+    "input": 1,
+    "output": 20
+  },
+  "gemini-3-flash-preview": {
+    "provider": "google",
+    "input": 0.5,
+    "output": 3,
+    "cache_read": 0.05,
+    "input_audio": 1
+  },
   "gemini-3-pro-image": {
     "provider": "google",
     "input": 2,
     "output": 120
   },
+  "gemini-3-pro-image-preview": {
+    "provider": "google",
+    "input": 2,
+    "output": 120
+  },
   "gemini-3.1-flash-image": {
+    "provider": "google",
+    "input": 0.5,
+    "output": 60
+  },
+  "gemini-3.1-flash-image-preview": {
     "provider": "google",
     "input": 0.5,
     "output": 60
@@ -155,10 +354,68 @@
     "input": 0.25,
     "output": 30
   },
+  "gemini-3.1-flash-lite-preview": {
+    "provider": "google",
+    "input": 0.25,
+    "output": 1.5,
+    "cache_read": 0.025,
+    "input_audio": 0.5
+  },
+  "gemini-3.1-flash-live-preview": {
+    "provider": "google",
+    "input": 0.75,
+    "output": 4.5,
+    "input_audio": 3,
+    "output_audio": 12
+  },
   "gemini-3.1-flash-tts-preview": {
     "provider": "google",
     "input": 1,
     "output": 20
+  },
+  "gemini-3.1-pro-preview": {
+    "provider": "google",
+    "input": 2,
+    "output": 12,
+    "cache_read": 0.2,
+    "tiers": [
+      {
+        "input": 4,
+        "output": 18,
+        "cache_read": 0.4,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 4,
+      "output": 18,
+      "cache_read": 0.4
+    }
+  },
+  "gemini-3.1-pro-preview-customtools": {
+    "provider": "google",
+    "input": 2,
+    "output": 12,
+    "cache_read": 0.2,
+    "tiers": [
+      {
+        "input": 4,
+        "output": 18,
+        "cache_read": 0.4,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 4,
+      "output": 18,
+      "cache_read": 0.4
+    }
   },
   "gemini-3.5-flash": {
     "provider": "google",
@@ -201,6 +458,11 @@
     "cache_read": 0.075,
     "input_audio": 0.75
   },
+  "gemini-embedding-001": {
+    "provider": "google",
+    "input": 0.15,
+    "output": 0
+  },
   "gemini-embedding-2": {
     "provider": "google",
     "input": 0.2,
@@ -225,21 +487,85 @@
     "input": 1.5,
     "output": 17.5
   },
+  "glm-4.5": {
+    "provider": "zhipuai",
+    "input": 0.6,
+    "output": 2.2,
+    "cache_read": 0.11,
+    "cache_write": 0
+  },
+  "glm-4.5-air": {
+    "provider": "zhipuai",
+    "input": 0.2,
+    "output": 1.1,
+    "cache_read": 0.03,
+    "cache_write": 0
+  },
+  "glm-4.5-flash": {
+    "provider": "zhipuai",
+    "input": 0,
+    "output": 0,
+    "cache_read": 0,
+    "cache_write": 0
+  },
+  "glm-4.5v": {
+    "provider": "zhipuai",
+    "input": 0.6,
+    "output": 1.8
+  },
+  "glm-4.6": {
+    "provider": "zhipuai",
+    "input": 0.6,
+    "output": 2.2,
+    "cache_read": 0.11,
+    "cache_write": 0
+  },
+  "glm-4.6v": {
+    "provider": "zhipuai",
+    "input": 0.3,
+    "output": 0.9
+  },
+  "glm-4.6v-flash": {
+    "provider": "zhipuai",
+    "input": 0,
+    "output": 0,
+    "cache_read": 0,
+    "cache_write": 0
+  },
+  "glm-4.7": {
+    "provider": "zhipuai",
+    "input": 0.6,
+    "output": 2.2,
+    "cache_read": 0.11,
+    "cache_write": 0
+  },
+  "glm-4.7-flash": {
+    "provider": "zhipuai",
+    "input": 0,
+    "output": 0,
+    "cache_read": 0,
+    "cache_write": 0
+  },
+  "glm-4.7-flashx": {
+    "provider": "zhipuai",
+    "input": 0.07,
+    "output": 0.4,
+    "cache_read": 0.01,
+    "cache_write": 0
+  },
+  "glm-5": {
+    "provider": "zhipuai",
+    "input": 1,
+    "output": 3.2,
+    "cache_read": 0.2,
+    "cache_write": 0
+  },
   "glm-5.1": {
-    "provider": "alibaba-cn",
-    "input": 0.825,
-    "output": 3.301,
-    "cache_read": 0.17,
-    "tiers": [
-      {
-        "input": 1.1,
-        "output": 3.851,
-        "tier": {
-          "type": "context",
-          "size": 32000
-        }
-      }
-    ]
+    "provider": "zhipuai",
+    "input": 1.4,
+    "output": 4.4,
+    "cache_read": 0.26,
+    "cache_write": 0
   },
   "glm-5.2": {
     "provider": "zhipuai",
@@ -275,6 +601,186 @@
     "output": 22,
     "cache_read": 1.2,
     "cache_write": 0
+  },
+  "gpt-3.5-turbo": {
+    "provider": "openai",
+    "input": 0.5,
+    "output": 1.5,
+    "cache_read": 0
+  },
+  "gpt-4": {
+    "provider": "openai",
+    "input": 30,
+    "output": 60
+  },
+  "gpt-4-turbo": {
+    "provider": "openai",
+    "input": 10,
+    "output": 30
+  },
+  "gpt-4.1": {
+    "provider": "openai",
+    "input": 2,
+    "output": 8,
+    "cache_read": 0.5
+  },
+  "gpt-4.1-mini": {
+    "provider": "openai",
+    "input": 0.4,
+    "output": 1.6,
+    "cache_read": 0.1
+  },
+  "gpt-4.1-nano": {
+    "provider": "openai",
+    "input": 0.1,
+    "output": 0.4,
+    "cache_read": 0.025
+  },
+  "gpt-4o": {
+    "provider": "openai",
+    "input": 2.5,
+    "output": 10,
+    "cache_read": 1.25
+  },
+  "gpt-4o-2024-05-13": {
+    "provider": "openai",
+    "input": 5,
+    "output": 15
+  },
+  "gpt-4o-2024-08-06": {
+    "provider": "openai",
+    "input": 2.5,
+    "output": 10,
+    "cache_read": 1.25
+  },
+  "gpt-4o-2024-11-20": {
+    "provider": "openai",
+    "input": 2.5,
+    "output": 10,
+    "cache_read": 1.25
+  },
+  "gpt-4o-mini": {
+    "provider": "openai",
+    "input": 0.15,
+    "output": 0.6,
+    "cache_read": 0.075
+  },
+  "gpt-5": {
+    "provider": "openai",
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.125
+  },
+  "gpt-5-mini": {
+    "provider": "openai",
+    "input": 0.25,
+    "output": 2,
+    "cache_read": 0.025
+  },
+  "gpt-5-nano": {
+    "provider": "openai",
+    "input": 0.05,
+    "output": 0.4,
+    "cache_read": 0.005
+  },
+  "gpt-5-pro": {
+    "provider": "openai",
+    "input": 15,
+    "output": 120
+  },
+  "gpt-5.1": {
+    "provider": "openai",
+    "input": 1.25,
+    "output": 10,
+    "cache_read": 0.125
+  },
+  "gpt-5.2": {
+    "provider": "openai",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175
+  },
+  "gpt-5.2-chat-latest": {
+    "provider": "openai",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175
+  },
+  "gpt-5.2-pro": {
+    "provider": "openai",
+    "input": 21,
+    "output": 168
+  },
+  "gpt-5.3-chat-latest": {
+    "provider": "openai",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175
+  },
+  "gpt-5.3-codex": {
+    "provider": "openai",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175
+  },
+  "gpt-5.3-codex-spark": {
+    "provider": "openai",
+    "input": 1.75,
+    "output": 14,
+    "cache_read": 0.175
+  },
+  "gpt-5.4": {
+    "provider": "openai",
+    "input": 2.5,
+    "output": 15,
+    "cache_read": 0.25,
+    "tiers": [
+      {
+        "input": 5,
+        "output": 22.5,
+        "cache_read": 0.5,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 5,
+      "output": 22.5,
+      "cache_read": 0.5
+    }
+  },
+  "gpt-5.4-mini": {
+    "provider": "openai",
+    "input": 0.75,
+    "output": 4.5,
+    "cache_read": 0.075
+  },
+  "gpt-5.4-nano": {
+    "provider": "openai",
+    "input": 0.2,
+    "output": 1.25,
+    "cache_read": 0.02
+  },
+  "gpt-5.4-pro": {
+    "provider": "openai",
+    "input": 30,
+    "output": 180,
+    "tiers": [
+      {
+        "input": 60,
+        "output": 270,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 60,
+      "output": 270
+    }
   },
   "gpt-5.5": {
     "provider": "openai",
@@ -563,6 +1069,72 @@
     "input_audio": 32,
     "output_audio": 64
   },
+  "grok-4.20-0309-non-reasoning": {
+    "provider": "xai",
+    "input": 1.25,
+    "output": 2.5,
+    "cache_read": 0.2,
+    "tiers": [
+      {
+        "input": 2.5,
+        "output": 5,
+        "cache_read": 0.4,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 2.5,
+      "output": 5,
+      "cache_read": 0.4
+    }
+  },
+  "grok-4.20-0309-reasoning": {
+    "provider": "xai",
+    "input": 1.25,
+    "output": 2.5,
+    "cache_read": 0.2,
+    "tiers": [
+      {
+        "input": 2.5,
+        "output": 5,
+        "cache_read": 0.4,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 2.5,
+      "output": 5,
+      "cache_read": 0.4
+    }
+  },
+  "grok-4.20-multi-agent-0309": {
+    "provider": "xai",
+    "input": 1.25,
+    "output": 2.5,
+    "cache_read": 0.2,
+    "tiers": [
+      {
+        "input": 2.5,
+        "output": 5,
+        "cache_read": 0.4,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 2.5,
+      "output": 5,
+      "cache_read": 0.4
+    }
+  },
   "grok-4.3": {
     "provider": "xai",
     "input": 1.25,
@@ -673,6 +1245,16 @@
       "cache_read": 0.4
     }
   },
+  "kimi-k2-thinking": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 2.294
+  },
+  "kimi-k2.5": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 2.411
+  },
   "kimi-k2.6": {
     "provider": "moonshotai-cn",
     "input": 0.95,
@@ -702,6 +1284,34 @@
     "input": 0.75,
     "output": 2.95,
     "cache_read": 0.015
+  },
+  "lyria-3-clip-preview": {
+    "provider": "google",
+    "input": 0,
+    "output": 0
+  },
+  "lyria-3-pro-preview": {
+    "provider": "google",
+    "input": 0,
+    "output": 0
+  },
+  "mimo-v2-flash": {
+    "provider": "xiaomi",
+    "input": 0.14,
+    "output": 0.28,
+    "cache_read": 0.0028
+  },
+  "mimo-v2-omni": {
+    "provider": "xiaomi",
+    "input": 0.14,
+    "output": 0.28,
+    "cache_read": 0.0028
+  },
+  "mimo-v2-pro": {
+    "provider": "xiaomi",
+    "input": 0.435,
+    "output": 0.87,
+    "cache_read": 0.0036
   },
   "mimo-v2.5": {
     "provider": "xiaomi",
@@ -739,6 +1349,46 @@
     "output": 8.7,
     "cache_read": 0.036
   },
+  "minimax-m2": {
+    "provider": "minimax-cn",
+    "input": 0.3,
+    "output": 1.2
+  },
+  "minimax-m2.1": {
+    "provider": "minimax-cn",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.03,
+    "cache_write": 0.375
+  },
+  "minimax-m2.5": {
+    "provider": "minimax-cn",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.03,
+    "cache_write": 0.375
+  },
+  "minimax-m2.5-highspeed": {
+    "provider": "minimax-cn",
+    "input": 0.6,
+    "output": 2.4,
+    "cache_read": 0.06,
+    "cache_write": 0.375
+  },
+  "minimax-m2.7": {
+    "provider": "minimax-cn",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.06,
+    "cache_write": 0.375
+  },
+  "minimax-m2.7-highspeed": {
+    "provider": "minimax-cn",
+    "input": 0.6,
+    "output": 2.4,
+    "cache_read": 0.06,
+    "cache_write": 0.375
+  },
   "minimax-m3": {
     "provider": "minimax-cn",
     "input": 0.3,
@@ -760,6 +1410,447 @@
       "output": 2.4,
       "cache_read": 0.12
     }
+  },
+  "moonshot-kimi-k2-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 2.294
+  },
+  "o1": {
+    "provider": "openai",
+    "input": 15,
+    "output": 60,
+    "cache_read": 7.5
+  },
+  "o1-pro": {
+    "provider": "openai",
+    "input": 150,
+    "output": 600
+  },
+  "o3": {
+    "provider": "openai",
+    "input": 2,
+    "output": 8,
+    "cache_read": 0.5
+  },
+  "o3-mini": {
+    "provider": "openai",
+    "input": 1.1,
+    "output": 4.4,
+    "cache_read": 0.55
+  },
+  "o3-pro": {
+    "provider": "openai",
+    "input": 20,
+    "output": 80
+  },
+  "o4-mini": {
+    "provider": "openai",
+    "input": 1.1,
+    "output": 4.4,
+    "cache_read": 0.275
+  },
+  "qvq-max": {
+    "provider": "alibaba-cn",
+    "input": 1.147,
+    "output": 4.588
+  },
+  "qwen-deep-research": {
+    "provider": "alibaba-cn",
+    "input": 7.742,
+    "output": 23.367
+  },
+  "qwen-doc-turbo": {
+    "provider": "alibaba-cn",
+    "input": 0.087,
+    "output": 0.144
+  },
+  "qwen-flash": {
+    "provider": "alibaba-cn",
+    "input": 0.022,
+    "output": 0.216
+  },
+  "qwen-long": {
+    "provider": "alibaba-cn",
+    "input": 0.072,
+    "output": 0.287
+  },
+  "qwen-math-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 1.721
+  },
+  "qwen-math-turbo": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.861
+  },
+  "qwen-max": {
+    "provider": "alibaba-cn",
+    "input": 0.345,
+    "output": 1.377
+  },
+  "qwen-mt-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.259,
+    "output": 0.775
+  },
+  "qwen-mt-turbo": {
+    "provider": "alibaba-cn",
+    "input": 0.101,
+    "output": 0.28
+  },
+  "qwen-omni-turbo": {
+    "provider": "alibaba-cn",
+    "input": 0.058,
+    "output": 0.23,
+    "input_audio": 3.584,
+    "output_audio": 7.168
+  },
+  "qwen-omni-turbo-realtime": {
+    "provider": "alibaba-cn",
+    "input": 0.23,
+    "output": 0.918,
+    "input_audio": 3.584,
+    "output_audio": 7.168
+  },
+  "qwen-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.115,
+    "output": 0.287,
+    "reasoning": 1.147,
+    "cache_read": 0.012,
+    "cache_write": 0.144
+  },
+  "qwen-plus-character": {
+    "provider": "alibaba-cn",
+    "input": 0.115,
+    "output": 0.287
+  },
+  "qwen-turbo": {
+    "provider": "alibaba-cn",
+    "input": 0.044,
+    "output": 0.087,
+    "reasoning": 0.431
+  },
+  "qwen-vl-max": {
+    "provider": "alibaba-cn",
+    "input": 0.23,
+    "output": 0.574
+  },
+  "qwen-vl-ocr": {
+    "provider": "alibaba-cn",
+    "input": 0.043,
+    "output": 0.072
+  },
+  "qwen-vl-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.115,
+    "output": 0.287
+  },
+  "qwen2-5-14b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.431
+  },
+  "qwen2-5-32b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.861
+  },
+  "qwen2-5-72b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 1.721
+  },
+  "qwen2-5-7b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.072,
+    "output": 0.144
+  },
+  "qwen2-5-coder-32b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.861
+  },
+  "qwen2-5-coder-7b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.287
+  },
+  "qwen2-5-math-72b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 1.721
+  },
+  "qwen2-5-math-7b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.287
+  },
+  "qwen2-5-omni-7b": {
+    "provider": "alibaba-cn",
+    "input": 0.087,
+    "output": 0.345,
+    "input_audio": 5.448
+  },
+  "qwen2-5-vl-72b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 2.294,
+    "output": 6.881
+  },
+  "qwen2-5-vl-7b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.717
+  },
+  "qwen3-14b": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.574,
+    "reasoning": 1.434
+  },
+  "qwen3-235b-a22b": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 1.147,
+    "reasoning": 2.868
+  },
+  "qwen3-32b": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 1.147,
+    "reasoning": 2.868
+  },
+  "qwen3-8b": {
+    "provider": "alibaba-cn",
+    "input": 0.072,
+    "output": 0.287,
+    "reasoning": 0.717
+  },
+  "qwen3-asr-flash": {
+    "provider": "alibaba-cn",
+    "input": 0.032,
+    "output": 0.032
+  },
+  "qwen3-coder-30b-a3b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.216,
+    "output": 0.861,
+    "tiers": [
+      {
+        "input": 0.323,
+        "output": 1.291,
+        "tier": {
+          "type": "context",
+          "size": 32000
+        }
+      },
+      {
+        "input": 0.538,
+        "output": 2.151,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      }
+    ]
+  },
+  "qwen3-coder-480b-a35b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.861,
+    "output": 3.441,
+    "tiers": [
+      {
+        "input": 1.291,
+        "output": 5.161,
+        "tier": {
+          "type": "context",
+          "size": 32000
+        }
+      },
+      {
+        "input": 2.151,
+        "output": 8.602,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      }
+    ]
+  },
+  "qwen3-coder-flash": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.574
+  },
+  "qwen3-coder-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.574,
+    "output": 2.296,
+    "tiers": [
+      {
+        "input": 0.861,
+        "output": 3.444,
+        "tier": {
+          "type": "context",
+          "size": 32000
+        }
+      },
+      {
+        "input": 1.435,
+        "output": 5.74,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      },
+      {
+        "input": 2.87,
+        "output": 28.7,
+        "tier": {
+          "type": "context",
+          "size": 256000
+        }
+      }
+    ]
+  },
+  "qwen3-max": {
+    "provider": "alibaba-cn",
+    "input": 0.359,
+    "output": 1.434,
+    "reasoning": 1.434,
+    "tiers": [
+      {
+        "input": 0.574,
+        "output": 2.294,
+        "reasoning": 2.294,
+        "tier": {
+          "type": "context",
+          "size": 32000
+        }
+      },
+      {
+        "input": 1.004,
+        "output": 4.014,
+        "reasoning": 4.014,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      }
+    ]
+  },
+  "qwen3-next-80b-a3b-instruct": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 0.574
+  },
+  "qwen3-next-80b-a3b-thinking": {
+    "provider": "alibaba-cn",
+    "input": 0.144,
+    "output": 1.434
+  },
+  "qwen3-omni-flash": {
+    "provider": "alibaba-cn",
+    "input": 0.058,
+    "output": 0.23,
+    "input_audio": 3.584,
+    "output_audio": 7.168
+  },
+  "qwen3-omni-flash-realtime": {
+    "provider": "alibaba-cn",
+    "input": 0.23,
+    "output": 0.918,
+    "input_audio": 3.584,
+    "output_audio": 7.168
+  },
+  "qwen3-vl-235b-a22b": {
+    "provider": "alibaba-cn",
+    "input": 0.286705,
+    "output": 1.14682,
+    "reasoning": 2.867051
+  },
+  "qwen3-vl-30b-a3b": {
+    "provider": "alibaba-cn",
+    "input": 0.108,
+    "output": 0.431,
+    "reasoning": 1.076
+  },
+  "qwen3-vl-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.143353,
+    "output": 1.433525,
+    "reasoning": 4.300576
+  },
+  "qwen3.5-397b-a17b": {
+    "provider": "alibaba-cn",
+    "input": 0.172,
+    "output": 1.032,
+    "reasoning": 1.032,
+    "tiers": [
+      {
+        "input": 0.43,
+        "output": 2.58,
+        "reasoning": 2.58,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      }
+    ]
+  },
+  "qwen3.5-flash": {
+    "provider": "alibaba-cn",
+    "input": 0.029,
+    "output": 0.287,
+    "reasoning": 0.287,
+    "tiers": [
+      {
+        "input": 0.115,
+        "output": 1.147,
+        "reasoning": 1.147,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      },
+      {
+        "input": 0.172,
+        "output": 1.72,
+        "reasoning": 1.72,
+        "tier": {
+          "type": "context",
+          "size": 256000
+        }
+      }
+    ]
+  },
+  "qwen3.5-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.115,
+    "output": 0.688,
+    "reasoning": 0.688,
+    "tiers": [
+      {
+        "input": 0.287,
+        "output": 1.72,
+        "reasoning": 1.72,
+        "tier": {
+          "type": "context",
+          "size": 128000
+        }
+      },
+      {
+        "input": 0.573,
+        "output": 3.44,
+        "reasoning": 3.44,
+        "tier": {
+          "type": "context",
+          "size": 256000
+        }
+      }
+    ]
   },
   "qwen3.6-flash": {
     "provider": "alibaba-cn",
@@ -873,6 +1964,34 @@
     "output": 0.382,
     "cache_read": 0.014
   },
+  "qwq-32b": {
+    "provider": "alibaba-cn",
+    "input": 0.287,
+    "output": 0.861
+  },
+  "qwq-plus": {
+    "provider": "alibaba-cn",
+    "input": 0.23,
+    "output": 0.574
+  },
+  "step-1-32k": {
+    "provider": "stepfun",
+    "input": 2.05,
+    "output": 9.59,
+    "cache_read": 0.41
+  },
+  "step-2-16k": {
+    "provider": "stepfun",
+    "input": 5.21,
+    "output": 16.44,
+    "cache_read": 1.04
+  },
+  "step-3.5-flash": {
+    "provider": "stepfun",
+    "input": 0.1,
+    "output": 0.3,
+    "cache_read": 0.02
+  },
   "step-3.5-flash-2603": {
     "provider": "stepfun",
     "input": 0.1,
@@ -890,5 +2009,25 @@
     "input": 0.959,
     "output": 2.741,
     "cache_read": 0.048
+  },
+  "text-embedding-3-large": {
+    "provider": "openai",
+    "input": 0.13,
+    "output": 0
+  },
+  "text-embedding-3-small": {
+    "provider": "openai",
+    "input": 0.02,
+    "output": 0
+  },
+  "text-embedding-ada-002": {
+    "provider": "openai",
+    "input": 0.1,
+    "output": 0
+  },
+  "tongyi-intent-detect-v3": {
+    "provider": "alibaba-cn",
+    "input": 0.058,
+    "output": 0.144
   }
 }

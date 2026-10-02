@@ -3,20 +3,11 @@ import { fileURLToPath } from "node:url";
 
 const SOURCE_URL = "https://models.dev/api.json";
 const OUTPUT_PATH = fileURLToPath(new URL("./models.json", import.meta.url));
+// Order matters: on duplicate model IDs the first provider wins, so reseller alibaba-cn stays last.
 const OFFICIAL_PROVIDERS = [
   "openai", "anthropic", "google", "deepseek", "zhipuai", "moonshotai-cn",
-  "minimax-cn", "alibaba-cn", "xiaomi", "stepfun", "longcat", "xai",
+  "minimax-cn", "xiaomi", "stepfun", "longcat", "xai", "alibaba-cn",
 ];
-
-function sixMonthsAgo(now) {
-  const cutoff = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()));
-  const originalDay = cutoff.getUTCDate();
-  cutoff.setUTCDate(1);
-  cutoff.setUTCMonth(cutoff.getUTCMonth() - 6);
-  const lastDay = new Date(Date.UTC(cutoff.getUTCFullYear(), cutoff.getUTCMonth() + 1, 0)).getUTCDate();
-  cutoff.setUTCDate(Math.min(originalDay, lastDay));
-  return cutoff.toISOString().slice(0, 10);
-}
 
 function hasTokenPrice(cost) {
   return cost && typeof cost === "object" && ["input", "output", "cache_read", "cache_write"]
@@ -39,7 +30,6 @@ async function fetchWithRetry(url, attempts = 3) {
 }
 
 const catalog = await (await fetchWithRetry(SOURCE_URL)).json();
-const cutoff = sixMonthsAgo(new Date());
 const selected = new Map();
 const conflicts = [];
 
@@ -48,7 +38,7 @@ for (const providerId of OFFICIAL_PROVIDERS) {
   if (!provider?.models || typeof provider.models !== "object") throw new Error(`Provider '${providerId}' is missing`);
   for (const [catalogKey, model] of Object.entries(provider.models)) {
     const modelId = (typeof model.id === "string" && model.id ? model.id : catalogKey).toLowerCase();
-    if (modelId.includes("/") || typeof model.release_date !== "string" || model.release_date < cutoff || !hasTokenPrice(model.cost)) continue;
+    if (modelId.includes("/") || !hasTokenPrice(model.cost)) continue;
     if (selected.has(modelId)) {
       conflicts.push(`${modelId}: kept ${selected.get(modelId).provider}, skipped ${providerId}`);
       continue;
@@ -59,5 +49,5 @@ for (const providerId of OFFICIAL_PROVIDERS) {
 
 const output = Object.fromEntries([...selected.entries()].sort(([left], [right]) => left.localeCompare(right)));
 await writeFile(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-console.log(`Generated ${selected.size} models released since ${cutoff}`);
+console.log(`Generated ${selected.size} models`);
 for (const conflict of conflicts) console.warn(conflict);
