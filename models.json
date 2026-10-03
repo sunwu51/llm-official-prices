@@ -233,10 +233,10 @@
   },
   "deepseek-v4-pro": {
     "provider": "deepseek",
-    "input": 0.435,
-    "output": 0.87,
-    "reasoning": 0.87,
-    "cache_read": 0.003625
+    "input": 0.66,
+    "output": 1.98,
+    "reasoning": 1.98,
+    "cache_read": 0.022
   },
   "deepseek-v4.1-flash": {
     "provider": "alibaba-cn",
