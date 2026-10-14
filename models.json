@@ -477,6 +477,13 @@
     "cache_read": 0.075,
     "input_audio": 0.75
   },
+  "gemini-4-argon": {
+    "provider": "google",
+    "input": 2,
+    "output": 10,
+    "cache_read": 0.1,
+    "input_audio": 2
+  },
   "gemini-embedding-001": {
     "provider": "google",
     "input": 0.15,
