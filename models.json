@@ -513,6 +513,28 @@
     "input": 1.5,
     "output": 17.5
   },
+  "gemini-pro-latest": {
+    "provider": "google",
+    "input": 2,
+    "output": 12,
+    "cache_read": 0.2,
+    "tiers": [
+      {
+        "input": 4,
+        "output": 18,
+        "cache_read": 0.4,
+        "tier": {
+          "type": "context",
+          "size": 200000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 4,
+      "output": 18,
+      "cache_read": 0.4
+    }
+  },
   "glm-4.5": {
     "provider": "zhipuai",
     "input": 0.6,
@@ -1384,9 +1406,15 @@
   },
   "longcat-2.0": {
     "provider": "longcat",
-    "input": 0.75,
-    "output": 2.95,
-    "cache_read": 0.015
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.006
+  },
+  "longcat-2.5-preview": {
+    "provider": "longcat",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.006
   },
   "lyria-3-clip-preview": {
     "provider": "google",
@@ -2205,27 +2233,27 @@
   },
   "step-3.5-flash": {
     "provider": "stepfun",
-    "input": 0.1,
-    "output": 0.3,
-    "cache_read": 0.02
+    "input": 0.10461,
+    "output": 0.31384,
+    "cache_read": 0.02092
   },
   "step-3.5-flash-2603": {
     "provider": "stepfun",
-    "input": 0.1,
-    "output": 0.3,
-    "cache_read": 0.02
+    "input": 0.10461,
+    "output": 0.31384,
+    "cache_read": 0.02092
   },
   "step-3.7-flash": {
     "provider": "stepfun",
-    "input": 0.185,
-    "output": 1.11,
-    "cache_read": 0.037
+    "input": 0.20175,
+    "output": 1.21052,
+    "cache_read": 0.04035
   },
   "step-5-preview": {
     "provider": "stepfun",
-    "input": 0.959,
-    "output": 2.741,
-    "cache_read": 0.048
+    "input": 1.04613,
+    "output": 2.98895,
+    "cache_read": 0.10461
   },
   "text-embedding-3-large": {
     "provider": "openai",
