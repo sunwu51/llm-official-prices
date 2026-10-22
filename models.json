@@ -1805,11 +1805,6 @@
     "output": 0.287,
     "reasoning": 0.717
   },
-  "qwen3-asr-flash": {
-    "provider": "alibaba-cn",
-    "input": 0.032,
-    "output": 0.032
-  },
   "qwen3-coder-30b-a3b-instruct": {
     "provider": "alibaba-cn",
     "input": 0.216,
