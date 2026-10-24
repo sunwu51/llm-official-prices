@@ -1406,6 +1406,20 @@
     "cache_read": 0.2988,
     "cache_write": 2.9879
   },
+  "kimi-k3.1-pro": {
+    "provider": "moonshotai-cn",
+    "input": 1.9437,
+    "output": 10.1671,
+    "cache_read": 0.1944,
+    "cache_write": 1.9437
+  },
+  "kimi-k3.1-pro-highspeed": {
+    "provider": "moonshotai-cn",
+    "input": 3.8874,
+    "output": 20.3342,
+    "cache_read": 0.1944,
+    "cache_write": 3.8874
+  },
   "longcat-2.0": {
     "provider": "longcat",
     "input": 0.3,
