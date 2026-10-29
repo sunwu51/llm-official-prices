@@ -346,17 +346,7 @@
     "input": 2,
     "output": 120
   },
-  "gemini-3-pro-image-preview": {
-    "provider": "google",
-    "input": 2,
-    "output": 120
-  },
   "gemini-3.1-flash-image": {
-    "provider": "google",
-    "input": 0.5,
-    "output": 60
-  },
-  "gemini-3.1-flash-image-preview": {
     "provider": "google",
     "input": 0.5,
     "output": 60
