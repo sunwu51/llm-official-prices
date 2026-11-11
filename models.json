@@ -481,6 +481,13 @@
     "cache_read": 0.1,
     "input_audio": 2
   },
+  "gemini-4-carbon": {
+    "provider": "google",
+    "input": 2,
+    "output": 10,
+    "cache_read": 0.1,
+    "input_audio": 2
+  },
   "gemini-embedding-001": {
     "provider": "google",
     "input": 0.15,
