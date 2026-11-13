@@ -1,4 +1,10 @@
 {
+  "chatgpt-image-latest": {
+    "provider": "openai",
+    "input": 5,
+    "output": 10,
+    "cache_read": 1.25
+  },
   "claude-fable-5": {
     "provider": "anthropic",
     "input": 10,
@@ -273,21 +279,7 @@
   "gemini-2.5-computer-use-preview-10-2025": {
     "provider": "google",
     "input": 1.25,
-    "output": 10,
-    "tiers": [
-      {
-        "input": 2.5,
-        "output": 15,
-        "tier": {
-          "type": "context",
-          "size": 200000
-        }
-      }
-    ],
-    "context_over_200k": {
-      "input": 2.5,
-      "output": 15
-    }
+    "output": 10
   },
   "gemini-2.5-flash": {
     "provider": "google",
@@ -488,6 +480,13 @@
     "cache_read": 0.1,
     "input_audio": 2
   },
+  "gemini-4-hydrogen": {
+    "provider": "google",
+    "input": 1.5,
+    "output": 7.5,
+    "cache_read": 0.075,
+    "input_audio": 1.5
+  },
   "gemini-embedding-001": {
     "provider": "google",
     "input": 0.15,
@@ -512,11 +511,6 @@
     "output": 2.5,
     "cache_read": 0.03
   },
-  "gemini-omni-flash-preview": {
-    "provider": "google",
-    "input": 1.5,
-    "output": 17.5
-  },
   "gemini-pro-latest": {
     "provider": "google",
     "input": 2,
@@ -538,6 +532,16 @@
       "output": 18,
       "cache_read": 0.4
     }
+  },
+  "gemma-4-26b-a4b-it": {
+    "provider": "google",
+    "input": 0,
+    "output": 0
+  },
+  "gemma-4-31b-it": {
+    "provider": "google",
+    "input": 0,
+    "output": 0
   },
   "glm-4.5": {
     "provider": "zhipuai",
@@ -1207,6 +1211,12 @@
     "output": 75,
     "cache_read": 1.25,
     "cache_write": 15.625
+  },
+  "gpt-image-1.5": {
+    "provider": "openai",
+    "input": 5,
+    "output": 10,
+    "cache_read": 1.25
   },
   "gpt-image-2": {
     "provider": "openai",
