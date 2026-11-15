@@ -511,6 +511,11 @@
     "output": 2.5,
     "cache_read": 0.03
   },
+  "gemini-omni-flash-preview": {
+    "provider": "google",
+    "input": 1.5,
+    "output": 17.5
+  },
   "gemini-pro-latest": {
     "provider": "google",
     "input": 2,
