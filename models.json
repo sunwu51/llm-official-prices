@@ -291,7 +291,7 @@
   "gemini-2.5-flash-image": {
     "provider": "google",
     "input": 0.3,
-    "output": 30,
+    "output": 2.5,
     "cache_read": 0.075
   },
   "gemini-2.5-flash-lite": {
@@ -343,12 +343,12 @@
   "gemini-3-pro-image": {
     "provider": "google",
     "input": 2,
-    "output": 120
+    "output": 12
   },
   "gemini-3.1-flash-image": {
     "provider": "google",
     "input": 0.5,
-    "output": 60
+    "output": 3
   },
   "gemini-3.1-flash-lite": {
     "provider": "google",
@@ -360,7 +360,7 @@
   "gemini-3.1-flash-lite-image": {
     "provider": "google",
     "input": 0.25,
-    "output": 30
+    "output": 1.5
   },
   "gemini-3.1-flash-lite-preview": {
     "provider": "google",
@@ -1221,12 +1221,6 @@
     "provider": "openai",
     "input": 5,
     "output": 10,
-    "cache_read": 1.25
-  },
-  "gpt-image-2": {
-    "provider": "openai",
-    "input": 5,
-    "output": 30,
     "cache_read": 1.25
   },
   "gpt-realtime-2.1": {
