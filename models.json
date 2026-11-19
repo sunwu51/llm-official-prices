@@ -487,6 +487,13 @@
     "cache_read": 0.075,
     "input_audio": 1.5
   },
+  "gemini-4-neon": {
+    "provider": "google",
+    "input": 3,
+    "output": 15,
+    "cache_read": 0.15,
+    "input_audio": 3
+  },
   "gemini-embedding-001": {
     "provider": "google",
     "input": 0.15,
