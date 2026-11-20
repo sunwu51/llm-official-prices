@@ -1442,28 +1442,6 @@
       "cache_read": 1
     }
   },
-  "grok-build-0.1": {
-    "provider": "xai",
-    "input": 1,
-    "output": 2,
-    "cache_read": 0.2,
-    "tiers": [
-      {
-        "input": 2,
-        "output": 4,
-        "cache_read": 0.4,
-        "tier": {
-          "type": "context",
-          "size": 200000
-        }
-      }
-    ],
-    "context_over_200k": {
-      "input": 2,
-      "output": 4,
-      "cache_read": 0.4
-    }
-  },
   "kimi-k2-thinking": {
     "provider": "alibaba-cn",
     "input": 0.574,
