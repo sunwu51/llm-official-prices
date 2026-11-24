@@ -276,11 +276,6 @@
     "output": 1.19015,
     "cache_read": 0.01488
   },
-  "gemini-2.5-computer-use-preview-10-2025": {
-    "provider": "google",
-    "input": 1.25,
-    "output": 10
-  },
   "gemini-2.5-flash": {
     "provider": "google",
     "input": 0.3,
@@ -361,13 +356,6 @@
     "provider": "google",
     "input": 0.25,
     "output": 1.5
-  },
-  "gemini-3.1-flash-lite-preview": {
-    "provider": "google",
-    "input": 0.25,
-    "output": 1.5,
-    "cache_read": 0.025,
-    "input_audio": 0.5
   },
   "gemini-3.1-flash-live-preview": {
     "provider": "google",
@@ -517,11 +505,6 @@
     "input": 0.3,
     "output": 2.5,
     "cache_read": 0.03
-  },
-  "gemini-omni-flash-preview": {
-    "provider": "google",
-    "input": 1.5,
-    "output": 17.5
   },
   "gemini-pro-latest": {
     "provider": "google",
@@ -758,22 +741,6 @@
       }
     ]
   },
-  "gpt-3.5-turbo": {
-    "provider": "openai",
-    "input": 0.5,
-    "output": 1.5,
-    "cache_read": 0
-  },
-  "gpt-4": {
-    "provider": "openai",
-    "input": 30,
-    "output": 60
-  },
-  "gpt-4-turbo": {
-    "provider": "openai",
-    "input": 10,
-    "output": 30
-  },
   "gpt-4.1": {
     "provider": "openai",
     "input": 2,
@@ -786,22 +753,11 @@
     "output": 1.6,
     "cache_read": 0.1
   },
-  "gpt-4.1-nano": {
-    "provider": "openai",
-    "input": 0.1,
-    "output": 0.4,
-    "cache_read": 0.025
-  },
   "gpt-4o": {
     "provider": "openai",
     "input": 2.5,
     "output": 10,
     "cache_read": 1.25
-  },
-  "gpt-4o-2024-05-13": {
-    "provider": "openai",
-    "input": 5,
-    "output": 15
   },
   "gpt-4o-2024-08-06": {
     "provider": "openai",
@@ -862,12 +818,6 @@
     "output": 168
   },
   "gpt-5.3-codex": {
-    "provider": "openai",
-    "input": 1.75,
-    "output": 14,
-    "cache_read": 0.175
-  },
-  "gpt-5.3-codex-spark": {
     "provider": "openai",
     "input": 1.75,
     "output": 14,
@@ -1280,14 +1230,6 @@
     "output": 10,
     "cache_read": 1.25
   },
-  "gpt-realtime-2.1": {
-    "provider": "openai",
-    "input": 4,
-    "output": 24,
-    "cache_read": 0.4,
-    "input_audio": 32,
-    "output_audio": 64
-  },
   "grok-4.20-0309-non-reasoning": {
     "provider": "xai",
     "input": 1.25,
@@ -1499,6 +1441,12 @@
     "output": 1.2,
     "cache_read": 0.006
   },
+  "longcat-2.5": {
+    "provider": "longcat",
+    "input": 0.3,
+    "output": 1.2,
+    "cache_read": 0.006
+  },
   "longcat-2.5-preview": {
     "provider": "longcat",
     "input": 0.3,
@@ -1626,39 +1574,16 @@
     "input": 0.574,
     "output": 2.294
   },
-  "o1": {
-    "provider": "openai",
-    "input": 15,
-    "output": 60,
-    "cache_read": 7.5
-  },
-  "o1-pro": {
-    "provider": "openai",
-    "input": 150,
-    "output": 600
-  },
   "o3": {
     "provider": "openai",
     "input": 2,
     "output": 8,
     "cache_read": 0.5
   },
-  "o3-mini": {
-    "provider": "openai",
-    "input": 1.1,
-    "output": 4.4,
-    "cache_read": 0.55
-  },
   "o3-pro": {
     "provider": "openai",
     "input": 20,
     "output": 80
-  },
-  "o4-mini": {
-    "provider": "openai",
-    "input": 1.1,
-    "output": 4.4,
-    "cache_read": 0.275
   },
   "qvq-max": {
     "provider": "alibaba-cn",
