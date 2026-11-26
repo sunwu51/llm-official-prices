@@ -296,8 +296,7 @@
   "gemini-2.5-flash-image": {
     "provider": "google",
     "input": 0.3,
-    "output": 2.5,
-    "cache_read": 0.075
+    "output": 2.5
   },
   "gemini-2.5-flash-lite": {
     "provider": "google",
@@ -1066,6 +1065,28 @@
       "cache_write": 25
     }
   },
+  "gpt-6-astra-healthcare": {
+    "provider": "openai",
+    "input": 10,
+    "output": 50,
+    "cache_read": 1,
+    "tiers": [
+      {
+        "input": 20,
+        "output": 75,
+        "cache_read": 2,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 20,
+      "output": 75,
+      "cache_read": 2
+    }
+  },
   "gpt-6-luna": {
     "provider": "openai",
     "input": 0.1,
@@ -1141,6 +1162,28 @@
       "cache_write": 5
     }
   },
+  "gpt-6.1-sol-healthcare": {
+    "provider": "openai",
+    "input": 2,
+    "output": 10,
+    "cache_read": 0.1,
+    "tiers": [
+      {
+        "input": 4,
+        "output": 15,
+        "cache_read": 0.2,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 4,
+      "output": 15,
+      "cache_read": 0.2
+    }
+  },
   "gpt-6.1-terra": {
     "provider": "openai",
     "input": 1,
@@ -1191,7 +1234,57 @@
       "cache_write": 20
     }
   },
+  "gpt-6.2-astra-healthcare": {
+    "provider": "openai",
+    "input": 8,
+    "output": 40,
+    "cache_read": 0.4,
+    "cache_write": 10,
+    "tiers": [
+      {
+        "input": 16,
+        "output": 60,
+        "cache_read": 0.8,
+        "cache_write": 20,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 16,
+      "output": 60,
+      "cache_read": 0.8,
+      "cache_write": 20
+    }
+  },
   "gpt-6.2-sol": {
+    "provider": "openai",
+    "input": 2,
+    "output": 10,
+    "cache_read": 0.1,
+    "cache_write": 2.5,
+    "tiers": [
+      {
+        "input": 4,
+        "output": 15,
+        "cache_read": 0.2,
+        "cache_write": 5,
+        "tier": {
+          "type": "context",
+          "size": 272000
+        }
+      }
+    ],
+    "context_over_200k": {
+      "input": 4,
+      "output": 15,
+      "cache_read": 0.2,
+      "cache_write": 5
+    }
+  },
+  "gpt-6.2-sol-healthcare": {
     "provider": "openai",
     "input": 2,
     "output": 10,
